@@ -14,7 +14,7 @@ Conway's game of life is a 0-player game where rules are set in advance and the 
 
 ### Wireframe
 
-![wireframe](https://github.com/cjshay/rough-life/life-wireframe.png)
+![wireframe](https://github.com/cjshay/rough-life/blob/master/life-wireframe.png)
 
 ### Implementation Timeline
 
