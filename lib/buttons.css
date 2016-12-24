@@ -1,13 +1,83 @@
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: inherit;
+  box-sizing: content-box;
+
+}
+
+body {
+  font-family: sans-serif;
+  color: white;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+header {
+  width: 300px;
+  margin: 30px auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 5px;
+  color: darkblue;
+}
+
+h6 {
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  margin: 5px;
+
+}
+
+.static-elements {
+  margin: 0 auto;
+  width: 925px;
+}
+
+.change-grid {
+  margin: 0 auto;
+  width: 925px;
+}
+
+.new-setting-elements {
+  margin: 0 auto;
+  width: 1000px;
+}
 .start {
+  float: left;
 
 }
 
 .same-setting {
-
+  float: left;
 }
 
 .same-setting-input {
-
+  float: left;
 }
 
 .new-setting {
@@ -15,5 +85,44 @@
 }
 
 .new-setting-input {
-  
+
+}
+
+#button-box button {
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  background: darkblue;
+}
+
+#button-box button:hover {
+  background: gray;
+  cursor: pointer;
+}
+
+#button-box input {
+  margin: 10px;
+  width: 90px;
+  padding: 5px 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: black;
+
+}
+
+input:focus {
+  outline: none;
+}
+
+.canvas {
+  margin: 20px auto;
+  border: 1px solid black;
+  width: 1200px;
+  background: gray;
+}
+
+.canvas-container {
+  height: 600px;
+  margin: 0 150px;
 }
