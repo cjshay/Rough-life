@@ -27,7 +27,7 @@ body {
   font-family: sans-serif;
   color: white;
 }
-
+/**/
 .group:after {
   content: "";
   clear: both;
