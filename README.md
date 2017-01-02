@@ -1,4 +1,5 @@
-
+### Live
+[Rough Life](https://cjshay.github.io/rough-life/)
 
 ### MVPs
 
@@ -14,10 +15,12 @@ Conway's game of life is a 0-player game where rules are set in advance and the 
 
 ### Wireframe
 
-![wireframe](https://github.com/cjshay/rough-life/blob/master/docs/life-wireframe.png)
+![wireframe](https://github.com/cjshay/rough-life/blob/gh-pages/docs/life-wireframe.png)
 
 ### Implementation Timeline
 
 **Phase 1**: Construct the logic of the project. Make sure that each step in the game represents the correct state determined by the rules of the game, no matter the starting position
+
 **Phase 2**: Create a basic rendering that colors live cells in one color and dead cells in another. Connect the rendering to one step of rendering of the app.
+
 **Phase 3**: Connect the rendering of one step to a live rendering of the game.
