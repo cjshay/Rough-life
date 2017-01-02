@@ -147,6 +147,11 @@ input:focus {
   margin: 0 50px;
 }
 
+.step {
+  margin: 0 auto;
+  width: 225px;
+}
+
 .canvas {
   margin: 20px auto;
   border: 1px solid black;
