@@ -65,8 +65,35 @@ h6 {
 
 .new-setting-elements {
   margin: 0 auto;
-  width: 1000px;
+  width: 1165px;
 }
+
+#object-place-input, #object-attack-input {
+   background: white;
+   padding: 5px 10px;
+   border: 1px solid black;
+   border-radius: 5px;
+   margin: 10px;
+   background: white;
+   margin: 10px;
+   width: 70px;
+   padding: 5px 10px;
+   border: 1px solid gray;
+   border-radius: 5px;
+   color: darkblue;
+   font-size: 16px;
+   text-align: center;
+}
+
+#object-place-input:focus, #object-attack-input:focus {
+  outline: none;
+}
+
+#object-place-input:hover, #object-attack-input:hover {
+  background: gray;
+  cursor: pointer;
+}
+
 .start {
   float: left;
 
@@ -113,6 +140,11 @@ h6 {
 
 input:focus {
   outline: none;
+}
+
+.section {
+  float: left;
+  margin: 0 50px;
 }
 
 .canvas {
