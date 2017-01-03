@@ -34,8 +34,25 @@ body {
   display: block;
 }
 header {
-  width: 300px;
+  width: 700px;
   margin: 30px auto;
+}
+
+#instructions {
+  color: black;
+  margin: 20px;
+}
+
+#instructions ul, #instructions h5{
+  list-style: none;
+  margin: 10px;
+}
+#instructions li {
+  margin: 20px 30px;
+
+}
+#instructions strong {
+  font-weight: 700;
 }
 
 h1 {
