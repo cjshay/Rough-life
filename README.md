@@ -1,7 +1,7 @@
-### Live
+### Play Rough Life
 [Rough Life](https://cjshay.github.io/rough-life/)
 
-### MVPs
+### Description
 
 Conway's game of life is a 0-player game where rules are set in advance and the game plays out on itself. Each cell on the board is either dead or alive and one "step" is the next iteration of the game. The next step is determined by whether each cell has dead or alive cells around them. If there are enough live cells around them, they will become / or stay alive. If there is not enough or too many, they will die.
 
@@ -10,17 +10,27 @@ Conway's game of life is a 0-player game where rules are set in advance and the 
 
 ### Architecture and Technologies
 
-- Canvas will be used for DOM rendering
-- Vanilla JS will guide the logic of the game and each step's placement/iteration
+- Canvas
+- JavaScript
+- HTML5
+- CSS
 
-### Wireframe
+### Features
 
-![wireframe](https://github.com/cjshay/rough-life/blob/gh-pages/docs/life-wireframe.png)
+- Players can begin the game with a random start
+- Players can toggle changes of color, pathfollow, and pathfill
+- Players can place an amount of prechosen Conway-type objects
+- Players can fill the board with an aforementioned object
+- Players can place a number of random objects
+- Players can step through iterations one at a time
 
-### Implementation Timeline
+### Future Directions for Project
 
-**Phase 1**: Construct the logic of the project. Make sure that each step in the game represents the correct state determined by the rules of the game, no matter the starting position
+#### Selecting squares based on user input
 
-**Phase 2**: Create a basic rendering that colors live cells in one color and dead cells in another. Connect the rendering to one step of rendering of the app.
+I plan to make squares live based on where users click.
 
-**Phase 3**: Connect the rendering of one step to a live rendering of the game.
+#### Placing objects based on text files from internet
+
+This will be implemented using an API where users can input a file that creates
+a Conway-type-object and let them place it on the board where they prefer.
