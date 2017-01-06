@@ -38,21 +38,14 @@ header {
   margin: 30px auto;
 }
 
-#instructions {
+.instructions {
   color: black;
-  margin: 20px;
+  margin: 30px 632px;
+  font-size: 20px;
 }
 
-#instructions ul, #instructions h5{
-  list-style: none;
-  margin: 10px;
-}
-#instructions li {
-  margin: 20px 30px;
-
-}
-#instructions strong {
-  font-weight: 700;
+.instructions:hover {
+  color: gray;
 }
 
 h1 {
@@ -131,7 +124,9 @@ h6 {
 .new-setting-input {
 
 }
-
+#button-box {
+  margin-top: 30px;
+}
 #button-box button {
   padding: 5px 10px;
   border: 1px solid black;
@@ -154,6 +149,47 @@ h6 {
   color: black;
 
 }
+
+.fa{
+  color: black;
+}
+
+.fa:hover, .url:hover{
+  color: darkblue;
+}
+
+li {
+  list-style: none;
+}
+
+.links li:first-child {
+  display: inline;
+}
+
+.github li:first-child {
+  /*margin: 0 55px;*/
+}
+.linkedin li:first-child {
+  /*margin: 0 105px;*/
+}
+.portfolio li:first-child {
+  /*margin: 0 74px;*/
+}
+
+.links {
+  float: left;
+  margin: 0 83px;
+}
+
+.link-list {
+  margin: 10px 70px;
+}
+
+.url {
+  color: black;
+}
+
+
 
 input:focus {
   outline: none;

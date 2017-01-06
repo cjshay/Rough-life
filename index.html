@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Rough Life</title>
+    <script src="https://use.fontawesome.com/333d5f5d77.js"></script>
     <link rel="shortcut icon" type="image/png" href="./images/glider.png"/>
     <link rel="stylesheet" href="assets/buttons.css">
   </head>
@@ -10,22 +11,26 @@
     <header class="header">
       <h1>Rough Life</h1>
       <h6>Inspired by Conway's Game of Life</h6>
-      <div id="instructions">
-        <h5>Instructions: Rough Life is based on Conway's classic game of life.</h6>
-        <ul>Rules: The grid is made up of squares. Each step is determined by how many live squares are surrounding it
-          <li>1) If a square is alive, and it has 2 or 3 live squares around it, it lives. Otherwise, it dies.</li>
-          <li>2) If a square is dead, and it has exactly 3 live squares around it, it resurrects.</li>
+      <div class="link-list group">
+        <ul class="links github">
+          <li><a href="http://github.com/cjshay"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+          <!-- <li class="url"><a href="http://github.com/cjshay">github.com/cjshay</a></li> -->
         </ul>
-        <ul>
-          <li> <strong>Start</strong> begins the game</li>
-          <li><strong>Rainbow Random Colors Follow Path and Fill Path</strong> change the users view of the grid</li>
-          <li><strong>Change Living Percentage</strong> changes what percentage of squares begin living</li>
-          <li><strong>Place object Fill Board and Random Objects</strong> places an amount of conway-type object</li>
-          <li><strong>Step</strong> carries through one iteration at a time</li>
+        <ul class="links linkedin">
+          <li><a href="http://linkedin.com/in/christopher-shay"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a></li>
+          <!-- <li class="url"><a href="http://linkedin.com/in/christopher-shay">linkedin.com/in/christopher-shay</a></li> -->
+        </ul>
+        <ul class="links portfolio">
+          <li><a href="http://cjshay.github.io/portfolio"><i class="fa fa-folder-open fa-lg" aria-hidden="true"></i></a></li>
+          <!-- <li class="url"><a href="http://cjshay.github.io/portfolio">cjshay.github.io/portfolio</a></li> -->
         </ul>
 
       </div>
+
     </header>
+
+    <a href="images/instructions.png" class="instructions">Instructions</a>
+
 
     <nav id="button-box">
       <div class="static-elements group">
@@ -92,7 +97,7 @@
 
       </div>
       <div class="step">
-        <button class="step-button" id="step-on-off">Step On Off</button>
+        <button class="step-button" id="step-on-off">Step On/Off</button>
         <button class="step-button" id="step" >Step</button>
       </div>
     </nav>
