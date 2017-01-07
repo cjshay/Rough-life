@@ -6,108 +6,111 @@
     <script src="https://use.fontawesome.com/333d5f5d77.js"></script>
     <link rel="shortcut icon" type="image/png" href="./images/glider.png"/>
     <link rel="stylesheet" href="assets/buttons.css">
+    <script src="assets/modal.js"></script>
   </head>
-  <body>
-    <header class="header">
-      <h1>Rough Life</h1>
-      <h6>Inspired by Conway's Game of Life</h6>
-      <div class="link-list group">
-        <ul class="links github">
-          <li><a href="http://github.com/cjshay"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
-          <!-- <li class="url"><a href="http://github.com/cjshay">github.com/cjshay</a></li> -->
-        </ul>
-        <ul class="links linkedin">
-          <li><a href="http://linkedin.com/in/christopher-shay"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a></li>
-          <!-- <li class="url"><a href="http://linkedin.com/in/christopher-shay">linkedin.com/in/christopher-shay</a></li> -->
-        </ul>
-        <ul class="links portfolio">
-          <li><a href="http://cjshay.github.io/portfolio"><i class="fa fa-folder-open fa-lg" aria-hidden="true"></i></a></li>
-          <!-- <li class="url"><a href="http://cjshay.github.io/portfolio">cjshay.github.io/portfolio</a></li> -->
-        </ul>
+  <div id="close-modal">
 
-      </div>
-
-    </header>
-
-    <a href="images/instructions.png" class="instructions">Instructions</a>
-
-
-    <nav id="button-box">
-      <div class="static-elements group">
-        <button id="start" class="start">Start</button>
-
-        <button id="rainbow-step" class="same-setting">Rainbow</button>
-        <button id="random-colors" class="same-setting">Random Colors</button>
-        <button id="follow-path" class="same-setting">Follow Path</button>
-        <button id="fill-path" class="same-setting">Fill Path</button>
-
-        <button id="percent-living" class="same-setting">Change Living Percentage</button>
-        <input id="percent-living-input" class="same-setting-input" placeholder="ex: 50%">
-      </div>
-
-      <div class="new-setting-elements group">
-        <div class="section">
-          <button class="object-place new-setting">Place object</button>
-          <input id="object-place-count-input" class="new-setting-input" placeholder="how many">
-          <select id="object-place-input" class="new-setting-input">
-            <option value="block">Block</option>
-            <option value="beehive">Beehive</option>
-            <option value="loaf">Loaf</option>
-            <option value="boat">Boat</option>
-            <option value="tub">Tub</option>
-            <option value="blinker">Blinker</option>
-            <option value="toad">Toad</option>
-            <option value="beacon">Beacon</option>
-            <option value="pulsar">Pulsar</option>
-            <option value="pentadecathlon">Pentadecathlon</option>
-            <option value="glider">Glider</option>
-            <option value="lightWeightSpaceship">Light Weight Spaceship</option>
-            <option value="clock">Clock</option>
-            <option value="benchmark">Benchmark</option>
-            <option value="gosperGliderGun">Gosper Glider Gun</option>
-          </select>
-        </div>
-
-        <div class="section">
-          <button class="object-attack new-setting">Fill Board</button>
-          <select id="object-attack-input" class="new-setting-input">
-            <option value="block">Block</option>
-            <option value="beehive">Beehive</option>
-            <option value="loaf">Loaf</option>
-            <option value="boat">Boat</option>
-            <option value="tub">Tub</option>
-            <option value="blinker">Blinker</option>
-            <option value="toad">Toad</option>
-            <option value="beacon">Beacon</option>
-            <option value="pulsar">Pulsar</option>
-            <option value="pentadecathlon">Pentadecathlon</option>
-            <option value="glider">Glider</option>
-            <option value="lightWeightSpaceship">Light Weight Spaceship</option>
-            <option value="clock">Clock</option>
-            <option value="benchmark">Benchmark</option>
-            <option value="gosperGliderGun">Gosper Glider Gun</option>
-          </select>
-        </div>
-
-        <div class="section">
-          <button id="random-objects" class="new-setting">Random Objects</button>
-          <input id="random-object-count-input" class="new-setting-input" placeholder="how many">
+    <body>
+      <header class="header">
+        <h1>Rough Life</h1>
+        <h6>Inspired by Conway's Game of Life</h6>
+        <div class="link-list group">
+          <ul class="links github">
+            <li><a href="http://github.com/cjshay"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+            <!-- <li class="url"><a href="http://github.com/cjshay">github.com/cjshay</a></li> -->
+          </ul>
+          <ul class="links linkedin">
+            <li><a href="http://linkedin.com/in/christopher-shay"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a></li>
+            <!-- <li class="url"><a href="http://linkedin.com/in/christopher-shay">linkedin.com/in/christopher-shay</a></li> -->
+          </ul>
+          <ul class="links portfolio">
+            <li><a href="http://cjshay.github.io/portfolio"><i class="fa fa-folder-open fa-lg" aria-hidden="true"></i></a></li>
+            <!-- <li class="url"><a href="http://cjshay.github.io/portfolio">cjshay.github.io/portfolio</a></li> -->
+          </ul>
 
         </div>
 
-      </div>
-      <div class="step">
-        <button class="step-button" id="step-on-off">Step On/Off</button>
-        <button class="step-button" id="step" >Step</button>
-      </div>
-    </nav>
-    <div class="canvas">
-      <div class="canvas-container">
+      </header>
+      <div id="modal"><img src="images/instructions.png"/></div>
+      <div id="open-modal" class="instructions">Instructions</div>
 
-        <canvas id="canvas"></canvas>
-      </div>
+      <nav id="button-box">
+        <div class="static-elements group">
+          <button id="start" class="start">Start</button>
 
-    </div>
-    <script type="application/javascript" src="lib/bundle.js"></script>
-  </body>
+          <button id="rainbow-step" class="same-setting">Rainbow</button>
+          <button id="random-colors" class="same-setting">Random Colors</button>
+          <button id="follow-path" class="same-setting">Follow Path</button>
+          <button id="fill-path" class="same-setting">Fill Path</button>
+
+          <button id="percent-living" class="same-setting">Change Living Percentage</button>
+          <input id="percent-living-input" class="same-setting-input" placeholder="ex: 50%">
+        </div>
+
+        <div class="new-setting-elements group">
+          <div class="section">
+            <button class="object-place new-setting">Place object</button>
+            <input id="object-place-count-input" class="new-setting-input" placeholder="how many">
+            <select id="object-place-input" class="new-setting-input">
+              <option value="block">Block</option>
+              <option value="beehive">Beehive</option>
+              <option value="loaf">Loaf</option>
+              <option value="boat">Boat</option>
+              <option value="tub">Tub</option>
+              <option value="blinker">Blinker</option>
+              <option value="toad">Toad</option>
+              <option value="beacon">Beacon</option>
+              <option value="pulsar">Pulsar</option>
+              <option value="pentadecathlon">Pentadecathlon</option>
+              <option value="glider">Glider</option>
+              <option value="lightWeightSpaceship">Light Weight Spaceship</option>
+              <option value="clock">Clock</option>
+              <option value="benchmark">Benchmark</option>
+              <option value="gosperGliderGun">Gosper Glider Gun</option>
+            </select>
+          </div>
+
+          <div class="section">
+            <button class="object-attack new-setting">Fill Board</button>
+            <select id="object-attack-input" class="new-setting-input">
+              <option value="block">Block</option>
+              <option value="beehive">Beehive</option>
+              <option value="loaf">Loaf</option>
+              <option value="boat">Boat</option>
+              <option value="tub">Tub</option>
+              <option value="blinker">Blinker</option>
+              <option value="toad">Toad</option>
+              <option value="beacon">Beacon</option>
+              <option value="pulsar">Pulsar</option>
+              <option value="pentadecathlon">Pentadecathlon</option>
+              <option value="glider">Glider</option>
+              <option value="lightWeightSpaceship">Light Weight Spaceship</option>
+              <option value="clock">Clock</option>
+              <option value="benchmark">Benchmark</option>
+              <option value="gosperGliderGun">Gosper Glider Gun</option>
+            </select>
+          </div>
+
+          <div class="section">
+            <button id="random-objects" class="new-setting">Random Objects</button>
+            <input id="random-object-count-input" class="new-setting-input" placeholder="how many">
+
+          </div>
+
+        </div>
+        <div class="step">
+          <button class="step-button" id="step-on-off">Step On/Off</button>
+          <button class="step-button" id="step" >Step</button>
+        </div>
+      </nav>
+      <div class="canvas">
+        <div class="canvas-container">
+
+          <canvas id="canvas"></canvas>
+        </div>
+
+      </div>
+      <script type="application/javascript" src="lib/bundle.js"></script>
+    </body>
+  </div>
 </html>
