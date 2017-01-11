@@ -1,5 +1,5 @@
 ### Play Rough Life
-[Rough Life](https://cjshay.github.io/rough-life/)
+[Rough Life](https://cjshay.github.io/Rough-life/)
 
 ### Description
 
