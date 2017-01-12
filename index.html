@@ -17,41 +17,57 @@
         <div class="link-list group">
           <ul class="links github">
             <li><a href="http://github.com/cjshay"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
-            <!-- <li class="url"><a href="http://github.com/cjshay">github.com/cjshay</a></li> -->
           </ul>
           <ul class="links linkedin">
             <li><a href="http://linkedin.com/in/christopher-shay"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a></li>
-            <!-- <li class="url"><a href="http://linkedin.com/in/christopher-shay">linkedin.com/in/christopher-shay</a></li> -->
           </ul>
           <ul class="links portfolio">
             <li><a href="http://cjshay.github.io/portfolio"><i class="fa fa-folder-open fa-lg" aria-hidden="true"></i></a></li>
-            <!-- <li class="url"><a href="http://cjshay.github.io/portfolio">cjshay.github.io/portfolio</a></li> -->
           </ul>
 
         </div>
 
       </header>
       <div id="modal"><img src="images/instructions.png"/></div>
-      <div id="open-modal" class="instructions">Instructions</div>
+      <button id="open-modal" class="instructions new-setting">Instructions</button>
 
       <nav id="button-box">
         <div class="static-elements group">
-          <button id="start" class="start">Start</button>
+          <!-- <button id="start" class="start">Start</button> -->
+          <div class="display">Color Options</div>
+          <select id="change-colors">
+            <option value="standard-color">Default</option>
+            <option value="rainbow-color">Rainbow</option>
+            <option value="random-color">Random</option>
+          </select>
+          <div class="display">Display Options</div>
+          <select id="display-option" class="display-option">
+            <option value="default">Default</option>
+            <option value="grid">Display Grid</option>
+            <option value="fill">Fill Squares</option>
+          </select>
 
-          <button id="rainbow-step" class="same-setting">Rainbow</button>
-          <button id="random-colors" class="same-setting">Random Colors</button>
-          <button id="follow-path" class="same-setting">Follow Path</button>
-          <button id="fill-path" class="same-setting">Fill Path</button>
-
-          <button id="percent-living" class="same-setting">Change Living Percentage</button>
-          <input id="percent-living-input" class="same-setting-input" placeholder="ex: 50">
         </div>
 
         <div class="new-setting-elements group">
           <div class="section">
             <button class="object-place new-setting">Place object</button>
-            <input id="object-place-count-input" class="new-setting-input" placeholder="how many">
+            <select id="object-place-count-input" class="new-setting-input">
+              <option value="fill">Fill Board</option>
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="5">5</option>
+              <option value="8">8</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+            </select>
+
             <select id="object-place-input" class="new-setting-input">
+              <option value="random">Random</option>
               <option value="block">Block</option>
               <option value="beehive">Beehive</option>
               <option value="loaf">Loaf</option>
@@ -68,38 +84,11 @@
               <option value="benchmark">Benchmark</option>
               <option value="gosperGliderGun">Gosper Glider Gun</option>
             </select>
-          </div>
-
-          <div class="section">
-            <button class="object-attack new-setting">Fill Board</button>
-            <select id="object-attack-input" class="new-setting-input">
-              <option value="block">Block</option>
-              <option value="beehive">Beehive</option>
-              <option value="loaf">Loaf</option>
-              <option value="boat">Boat</option>
-              <option value="tub">Tub</option>
-              <option value="blinker">Blinker</option>
-              <option value="toad">Toad</option>
-              <option value="beacon">Beacon</option>
-              <option value="pulsar">Pulsar</option>
-              <option value="pentadecathlon">Pentadecathlon</option>
-              <option value="glider">Glider</option>
-              <option value="lightWeightSpaceship">Light Weight Spaceship</option>
-              <option value="clock">Clock</option>
-              <option value="benchmark">Benchmark</option>
-              <option value="gosperGliderGun">Gosper Glider Gun</option>
-            </select>
-          </div>
-
-          <div class="section">
-            <button id="random-objects" class="new-setting">Random Objects</button>
-            <input id="random-object-count-input" class="new-setting-input" placeholder="how many">
-
           </div>
 
         </div>
         <div class="step">
-          <button class="step-button" id="step-on-off">Step On/Off</button>
+          <button class="step-button" id="step-on-off">PAUSE</button>
           <button class="step-button" id="step" >Step</button>
         </div>
       </nav>

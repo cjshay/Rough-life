@@ -28,7 +28,7 @@ body {
   font-family: sans-serif;
   color: white;
 }
-/**/
+
 .group:after {
   content: "";
   clear: both;
@@ -41,21 +41,31 @@ header {
 }
 
 #modal {
+  width: 100%;
   position: absolute;
-  margin: auto 353px;
+  /*margin: 0 auto;*/
   position: absolute;
 
+}
+#modal img {
+  margin: 0 auto;
+  display: block;
 }
 
 
 .instructions {
-  color: black;
-  margin: 30px 632px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px auto;
+  background: darkblue;
+  color: white;
   font-size: 20px;
+  display: block;
 }
 
 .instructions:hover {
-  color: gray;
+  background: gray;
   cursor: pointer;
 }
 
@@ -75,7 +85,7 @@ h6 {
 
 .static-elements {
   margin: 0 auto;
-  width: 925px;
+  width: 565px;
 }
 
 .change-grid {
@@ -85,10 +95,16 @@ h6 {
 
 .new-setting-elements {
   margin: 0 auto;
-  width: 1165px;
+  width: 579px;
 }
 
-#object-place-input, #object-attack-input {
+.display {
+  color: darkblue;
+  display: inline;
+}
+
+#object-place-input, #object-place-count-input,
+#display-option, #change-colors {
    background: white;
    padding: 5px 10px;
    border: 1px solid black;
@@ -96,7 +112,7 @@ h6 {
    margin: 10px;
    background: white;
    margin: 10px;
-   width: 70px;
+   width: 150px;
    padding: 5px 10px;
    border: 1px solid gray;
    border-radius: 5px;
@@ -105,11 +121,13 @@ h6 {
    text-align: center;
 }
 
-#object-place-input:focus, #object-attack-input:focus {
+#object-place-input:focus, #object-place-count-input:focus,
+#display-option:focus, #change-colors:focus{
   outline: none;
 }
 
-#object-place-input:hover, #object-attack-input:hover {
+#object-place-input:hover, #object-place-count-input:hover,
+#display-option:hover, #change-colors:hover {
   background: gray;
   cursor: pointer;
 }
@@ -212,7 +230,7 @@ input:focus {
 
 .step {
   margin: 0 auto;
-  width: 225px;
+  width: 175px;
 }
 
 .canvas {
