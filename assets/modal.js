@@ -10,8 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
   openModal.onclick = function() {
     body.style.background = "gray";
+    modal.style.display = "block";
   };
-  
+
   closeModal.onclick = function() {
     if (event.target !== openModal) {
       body.style.background = "white";
