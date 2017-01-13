@@ -32,9 +32,11 @@
       <button id="open-modal" class="instructions new-setting">Instructions</button>
 
       <nav id="button-box">
+        <div class="restart group">
+          <button id="start" class="start">Restart</button>
+
+        </div>
         <div class="static-elements group">
-          <!-- <button type="button" name="button"></button> -->
-          <button id="start" class="start">Start</button>
           <div class="display">Color Options</div>
           <select id="change-colors">
             <option value="standard-color">Default</option>
@@ -52,7 +54,7 @@
 
         <div class="new-setting-elements group">
           <div class="section">
-            <button class="object-place new-setting">Place object</button>
+            <div class="display">Place Objects</div>
             <select id="object-place-count-input" class="new-setting-input">
               <option value="fill">Fill Board</option>
               <option value="1">1</option>
@@ -88,8 +90,10 @@
           </div>
 
         </div>
+        <!-- <i class="fa fa-play" aria-hidden="true"></i> -->
+<!-- <i class="fa fa-pause" aria-hidden="true"> -->
         <div class="step">
-          <button class="step-button" id="step-on-off">PAUSE</button>
+          <button class="step-button" id="step-on-off"></button>
           <button class="step-button" id="step" >Step</button>
         </div>
       </nav>

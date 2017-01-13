@@ -87,6 +87,11 @@ h6 {
   width: 650px;
 }
 
+.restart {
+  margin: 0 auto;
+  width: 90px;
+}
+
 .change-grid {
   margin: 0 auto;
   width: 925px;
@@ -216,8 +221,6 @@ li {
   color: black;
 }
 
-
-
 input:focus {
   outline: none;
 }
@@ -230,6 +233,10 @@ input:focus {
 .step {
   margin: 0 auto;
   width: 175px;
+}
+
+.fa-play, .fa-pause {
+  color: white;
 }
 
 .canvas {
