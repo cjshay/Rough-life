@@ -34,7 +34,6 @@ body {
   display: block;
 }
 header {
-  /*background-image: url("../images/conway-bg.png");*/
   width: 700px;
   margin: 30px auto;
 }
@@ -42,7 +41,6 @@ header {
 #modal {
   width: 100%;
   position: absolute;
-  /*margin: 0 auto;*/
   position: absolute;
 
 }
