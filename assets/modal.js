@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   closeModal.onclick = function() {
     if (event.target !== openModal) {
-      body.style.background = "white";
+      body.style.background = "whitesmoke";
       modal.style.display = "none";
     }
   };
