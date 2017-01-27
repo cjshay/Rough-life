@@ -42,8 +42,8 @@ header {
   width: 100%;
   position: absolute;
   position: absolute;
-
 }
+
 #modal img {
   margin: 0 auto;
   display: block;
@@ -247,4 +247,23 @@ input:focus {
 .canvas-container {
   height: 600px;
   margin: 0 150px;
+}
+
+#pattern-holder {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#pattern {
+  background: black;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+}
+
+.square {
+  float: left;
+  width: 50px;
+  background: blue;
 }
