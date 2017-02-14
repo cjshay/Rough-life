@@ -9,6 +9,8 @@ Conway's game of life is a 0-player game where rules are set in advance and the 
 - The game moves through iterations based on the rules of the game and renders them at each step
 
 ![Game Example](https://github.com/cjshay/Rough-life/raw/gh-pages/assets/images/ex1.png)
+![Game Example](https://github.com/cjshay/Rough-life/raw/gh-pages/assets/images/ex2.png)
+![Game Example](https://github.com/cjshay/Rough-life/raw/gh-pages/assets/images/ex3.png)
 
 ### Architecture and Technologies
 
